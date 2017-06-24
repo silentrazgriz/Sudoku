@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::group(['prefix' => 'api'], function() {
+	Route::resource('score', 'ScoreController', ['only' => ['index', 'store']]);
 });
