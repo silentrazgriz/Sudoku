@@ -41,5 +41,7 @@ class ScoreController extends Controller
 
 			return response()->json($result);
 		}
+		
+		// tambah comment
 	}
 }
